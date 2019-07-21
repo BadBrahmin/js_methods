@@ -15,6 +15,11 @@ var words = [
 // Write a function uniqueArray that receives an array of words as a parameter. And remove the duplicates, and return a new array. 
 // (indexOf)
 
+function onlyUnique(value, index, self) {
+  return self.indexOf(value) === index;
+}
+
+var unique = words.filter(onlyUnique);
 
 
 var words2 = [
